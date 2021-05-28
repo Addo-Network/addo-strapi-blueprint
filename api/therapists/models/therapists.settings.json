@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "therapists",
+  "info": {
+    "name": "Therapists",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "minLength": 1
+    },
+    "credentials": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "profile_pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "biography": {
+      "type": "richtext",
+      "minLength": 2,
+      "maxLength": 450
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "treatment_approach": {
+      "type": "richtext"
+    },
+    "payment": {
+      "type": "richtext"
+    },
+    "qualifications": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "richtext"
+    },
+    "website": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    },
+    "email": {
+      "type": "email"
+    },
+    "therapists_states": {
+      "via": "therapists",
+      "model": "therapists-states"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/therapists-states",
+      "handler": "therapists-states.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/therapists-states/count",
+      "handler": "therapists-states.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/therapists-states/:id",
+      "handler": "therapists-states.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/therapists-states",
+      "handler": "therapists-states.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/therapists-states/:id",
+      "handler": "therapists-states.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/therapists-states/:id",
+      "handler": "therapists-states.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
