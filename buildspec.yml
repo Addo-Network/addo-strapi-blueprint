@@ -4,6 +4,9 @@ version: 0.2
     install:
       runtime-versions:
         nodejs: 12
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
 #       #commands:
 #     pre_build:
 #       commands:
