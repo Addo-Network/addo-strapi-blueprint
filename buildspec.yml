@@ -1,13 +1,20 @@
 version: 0.2
 
-  phases: 
-    install:
-      runtime-versions:
-        - echo Installing nodejs
-        nodejs: 12
-  pre_build:
+phases: 
+  install:
+    runtime-versions:
+      nodejs: 12
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - npm install
+  build:
+    commands:
+      - npm run build
+  artifacts:
+    files:
+      - '**/*'
+    base-directory: base_dir
+    name: strapi-build
+    discard-paths: no
 #       #commands:
 #     pre_build:
 #       commands:

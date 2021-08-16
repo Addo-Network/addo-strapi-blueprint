@@ -44,6 +44,24 @@
     },
     "author": {
       "model": "author"
+    },
+    "likes": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "video": {
+      "type": "string"
     }
   }
 }

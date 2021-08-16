@@ -39,7 +39,8 @@
       "maxLength": 450
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "full_name"
     },
     "treatment_approach": {
       "type": "richtext"
