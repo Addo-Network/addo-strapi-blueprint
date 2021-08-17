@@ -8,10 +8,12 @@ hooks:
     - location: scripts/start_server.sh
       timeout: 300
       runas: root
+  #only runs on after firts deploy to restart the server
   ApplicationStart:
     - location: scripts/restart_server.sh
       timeout: 300
       runas: root
+  #only runs on after firts deploy to stop the server
   ApplicationStop:
     - location: scripts/stop_server.sh
       timeout: 300
