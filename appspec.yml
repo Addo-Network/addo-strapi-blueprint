@@ -5,7 +5,7 @@ files:
     destination: /home/addo-strapi-blueprint
 hooks:
   BeforeInstall:
-    - location:: script/remove_nodemodules.sh
+    - location: script/remove_nodemodules.sh
       timeout: 300
       runas: root
   AfterInstall:
