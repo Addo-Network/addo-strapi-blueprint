@@ -9,12 +9,12 @@ phases:
   build:
     commands:
       - npm run build
-  artifacts:
-    files:
-      - '**/*'
-    base-directory: base_dir
-    name: strapi-build
-    discard-paths: no
+artifacts:
+  files:
+    - '**/*'
+  base-directory: "./"
+  name: strapi-build
+  discard-paths: no
 #       #commands:
 #     pre_build:
 #       commands:
