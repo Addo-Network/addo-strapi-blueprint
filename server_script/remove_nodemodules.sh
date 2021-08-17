@@ -1,1 +1,1 @@
-rm -rvf node_modules
+rm -rvf /home/addo-strapi-blueprint/node_modules
