@@ -3,8 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/addo-strapi-blueprint
-hooks:
-  AfterInstall:
-    - location: server_script/start_server.sh
-      timeout: 300
-      runas: root
+# hooks:
+#   AfterInstall:
+#     - location: server_script/start_server.sh
+#       timeout: 300
+#       runas: root
