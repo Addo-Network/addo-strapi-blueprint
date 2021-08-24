@@ -1,1 +1,1 @@
-pm2 restart addo-strapi-blueprint
+npm run start
