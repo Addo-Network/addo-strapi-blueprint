@@ -4,21 +4,21 @@ files:
   - source: /
     destination: /home/addo-strapi-blueprint
 hooks:
-  BeforeInstall:
-    - location: server_script/remove_nodemodules.sh
-      timeout: 300
-      runas: root
+  # BeforeInstall:
+  #   - location: server_script/remove_nodemodules.sh
+  #     timeout: 300
+  #     runas: root
   AfterInstall:
     - location: server_script/start_server.sh
       timeout: 300
       runas: root
   #only runs on after firts deploy to restart the server
-  ApplicationStart:
-    - location: server_script/restart_server.sh
-      timeout: 300
-      runas: root
+  # ApplicationStart:
+  #   - location: server_script/restart_server.sh
+  #     timeout: 300
+  #     runas: root
   #only runs on after firts deploy to stop the server
-  ApplicationStop:
-    - location: server_script/stop_server.sh
-      timeout: 300
-      runas: root
+  # ApplicationStop:
+  #   - location: server_script/stop_server.sh
+  #     timeout: 300
+  #     runas: root
